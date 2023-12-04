@@ -1,0 +1,24 @@
+.hoverA {
+  position: relative;
+}
+.menuA {
+  visibility: hidden;
+  position: absolute;
+
+  width: fit-content;
+  padding: 8px;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  box-shadow: 1px 1px 5px rgb(179, 179, 179);
+  z-index: 1000;
+}
+.menuA a {
+  padding: 5px;
+}
+.hoverA:hover .menuA {
+  display: flex;
+  visibility: visible;
+  flex-direction: column;
+  top: 100%;
+  left: -10px;
+}
