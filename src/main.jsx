@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./Layout.jsx";
+import Home from "./Pages/Home/Home.jsx";
+import MainLayout from "./Layout/MainLayout.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <MainLayout />,
     children: [
       {
         path: "/",
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <Layout />
+      <MainLayout />
     </RouterProvider>
   </React.StrictMode>
 );
