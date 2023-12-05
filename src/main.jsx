@@ -6,6 +6,9 @@ import Home from "./Pages/Home/Home.jsx";
 import MainLayout from "./Layout/MainLayout.jsx";
 import FindBlood from "./Pages/FindBlood/FindBlood.jsx";
 import Login from "./Pages/Login/Login.jsx";
+import Profile from "./Pages/Profile/Profile.jsx";
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const router = createBrowserRouter([
   {
@@ -21,8 +24,13 @@ const router = createBrowserRouter([
         element: <FindBlood></FindBlood>,
       },
       {
+
         path: "/login",
-        element: <Login />,
+        element: <Login />
+      },{
+        path: "/profile",
+        element: <Profile />,
+ 
       },
     ],
   },
