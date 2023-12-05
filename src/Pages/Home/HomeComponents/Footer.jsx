@@ -41,7 +41,7 @@ const Footer = () => {
                 placeholder="Email address"
               />{" "}
               <button className="text-2xl bg-[#ffd2dd]  py-3 px-5 rounded-t-lg text-black">
-                >
+                
               </button>
             </div>
           </div>
