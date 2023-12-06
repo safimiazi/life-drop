@@ -1,12 +1,11 @@
 import "./Login.css";
-import check from "../../../public/check-circle.svg";
 import ButtonCheck from "../../Shared/Button/ButtonCheck";
 
 const Login = () => {
   // Submit Function
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("This si ");
+    alert("This is alert ");
   };
   return (
     <div className="max-w-[1440px] mx-auto ">
