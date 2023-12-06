@@ -1,3 +1,4 @@
+import "./Home.css";
 const FAQ = () => {
   return (
     <div className="max-w-[1440px] mx-auto mb-36 px-6">
@@ -7,7 +8,7 @@ const FAQ = () => {
           <div className="absolute lg:-top-5 lg:-left-5 -z-50 lg:text-6xl font-bold  border-2 lg:border-8 border-black w-12 h-12 lg:w-28 lg:h-28 flex items-center justify-center rounded-full">
             1
           </div>
-          <div className="w-48 h-48 lg:w-[370px] lg:h-[370px] bg-white rounded-full  shadow-2xl flex flex-col items-center justify-center space-y-5 ">
+          <div className="w-48 h-48 lg:w-[370px] lg:h-[370px] bg-white rounded-full  custom-shadow flex flex-col items-center justify-center space-y-5 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-12 h-12 lg:w-28 lg:h-28"
@@ -19,8 +20,8 @@ const FAQ = () => {
                 fill="black"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M6.75 91.125C6.75 93.8103 7.81674 96.3857 9.71554 98.2845C11.6143 100.183 14.1897 101.25 16.875 101.25H91.125C93.8103 101.25 96.3857 100.183 98.2845 98.2845C100.183 96.3857 101.25 93.8103 101.25 91.125V50.625C101.25 49.7299 100.894 48.8715 100.261 48.2385C99.6286 47.6056 98.7701 47.25 97.875 47.25C96.9799 47.25 96.1214 47.6056 95.4885 48.2385C94.8556 48.8715 94.5 49.7299 94.5 50.625V91.125C94.5 92.0201 94.1444 92.8786 93.5115 93.5115C92.8786 94.1444 92.0201 94.5 91.125 94.5H16.875C15.9799 94.5 15.1215 94.1444 14.4885 93.5115C13.8556 92.8786 13.5 92.0201 13.5 91.125V16.875C13.5 15.9799 13.8556 15.1215 14.4885 14.4885C15.1215 13.8556 15.9799 13.5 16.875 13.5H60.75C61.6451 13.5 62.5036 13.1444 63.1365 12.5115C63.7694 11.8786 64.125 11.0201 64.125 10.125C64.125 9.22989 63.7694 8.37145 63.1365 7.73851C62.5036 7.10558 61.6451 6.75 60.75 6.75H16.875C14.1897 6.75 11.6143 7.81674 9.71554 9.71554C7.81674 11.6143 6.75 14.1897 6.75 16.875V91.125Z"
                 fill="black"
               />
@@ -35,7 +36,7 @@ const FAQ = () => {
           <div className="absolute lg:-top-5 lg:-left-5 -z-50 lg:text-6xl font-bold  border-2 lg:border-8 border-black w-12 h-12 lg:w-28 lg:h-28 flex items-center justify-center rounded-full">
             2
           </div>
-          <div className="w-48 h-48 lg:w-[370px] lg:h-[370px] bg-white rounded-full  shadow-2xl flex flex-col items-center justify-center space-y-5 ">
+          <div className="w-48 h-48 lg:w-[370px] lg:h-[370px] bg-white rounded-full  custom-shadow flex flex-col items-center justify-center space-y-5 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-12 h-12 lg:w-28 lg:h-28"
@@ -47,8 +48,8 @@ const FAQ = () => {
                 fill="black"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M6.75 91.125C6.75 93.8103 7.81674 96.3857 9.71554 98.2845C11.6143 100.183 14.1897 101.25 16.875 101.25H91.125C93.8103 101.25 96.3857 100.183 98.2845 98.2845C100.183 96.3857 101.25 93.8103 101.25 91.125V50.625C101.25 49.7299 100.894 48.8715 100.261 48.2385C99.6286 47.6056 98.7701 47.25 97.875 47.25C96.9799 47.25 96.1214 47.6056 95.4885 48.2385C94.8556 48.8715 94.5 49.7299 94.5 50.625V91.125C94.5 92.0201 94.1444 92.8786 93.5115 93.5115C92.8786 94.1444 92.0201 94.5 91.125 94.5H16.875C15.9799 94.5 15.1215 94.1444 14.4885 93.5115C13.8556 92.8786 13.5 92.0201 13.5 91.125V16.875C13.5 15.9799 13.8556 15.1215 14.4885 14.4885C15.1215 13.8556 15.9799 13.5 16.875 13.5H60.75C61.6451 13.5 62.5036 13.1444 63.1365 12.5115C63.7694 11.8786 64.125 11.0201 64.125 10.125C64.125 9.22989 63.7694 8.37145 63.1365 7.73851C62.5036 7.10558 61.6451 6.75 60.75 6.75H16.875C14.1897 6.75 11.6143 7.81674 9.71554 9.71554C7.81674 11.6143 6.75 14.1897 6.75 16.875V91.125Z"
                 fill="black"
               />
@@ -66,7 +67,7 @@ const FAQ = () => {
           <div className="absolute lg:-top-5 lg:-left-5 -z-50 lg:text-6xl font-bold  border-2 lg:border-8 border-black w-12 h-12 lg:w-28 lg:h-28 flex items-center justify-center rounded-full">
             3
           </div>
-          <div className="w-48 h-48 lg:w-[370px] lg:h-[370px] bg-white rounded-full  shadow-2xl flex flex-col items-center justify-center space-y-5 ">
+          <div className="w-48 h-48 lg:w-[370px] lg:h-[370px] bg-white rounded-full  custom-shadow flex flex-col items-center justify-center space-y-5 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-12 h-12 lg:w-28 lg:h-28"
@@ -78,8 +79,8 @@ const FAQ = () => {
                 fill="black"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M6.75 91.125C6.75 93.8103 7.81674 96.3857 9.71554 98.2845C11.6143 100.183 14.1897 101.25 16.875 101.25H91.125C93.8103 101.25 96.3857 100.183 98.2845 98.2845C100.183 96.3857 101.25 93.8103 101.25 91.125V50.625C101.25 49.7299 100.894 48.8715 100.261 48.2385C99.6286 47.6056 98.7701 47.25 97.875 47.25C96.9799 47.25 96.1214 47.6056 95.4885 48.2385C94.8556 48.8715 94.5 49.7299 94.5 50.625V91.125C94.5 92.0201 94.1444 92.8786 93.5115 93.5115C92.8786 94.1444 92.0201 94.5 91.125 94.5H16.875C15.9799 94.5 15.1215 94.1444 14.4885 93.5115C13.8556 92.8786 13.5 92.0201 13.5 91.125V16.875C13.5 15.9799 13.8556 15.1215 14.4885 14.4885C15.1215 13.8556 15.9799 13.5 16.875 13.5H60.75C61.6451 13.5 62.5036 13.1444 63.1365 12.5115C63.7694 11.8786 64.125 11.0201 64.125 10.125C64.125 9.22989 63.7694 8.37145 63.1365 7.73851C62.5036 7.10558 61.6451 6.75 60.75 6.75H16.875C14.1897 6.75 11.6143 7.81674 9.71554 9.71554C7.81674 11.6143 6.75 14.1897 6.75 16.875V91.125Z"
                 fill="black"
               />
