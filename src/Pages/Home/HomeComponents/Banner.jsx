@@ -1,70 +1,14 @@
+import "./Home.css";
+import heroPng from "./../../../../public/Hero.png";
+import ButtonFill from "../../../Shared/Button/ButtonFill";
 const Banner = () => {
   return (
-    <>
-      <div className="absolute top-0 -z-30 flex-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[946px] lg:h-[968px]"
-          viewBox="0 0 946 968"
-          fill="none"
-        >
-          <g filter="url(#filter0_d_93_102)">
-            <path
-              d="M897 811.5C731.274 699.342 302.232 960 22.5 960C-257.232 960 -484 733.232 -484 453.5C-484 173.768 -257.232 -53 22.5 -53C302.232 -53 1144.5 979 897 811.5Z"
-              fill="url(#paint0_linear_93_102)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_d_93_102"
-              x="-488"
-              y="-53"
-              width="1433.96"
-              height="1021"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dy="4" />
-              <feGaussianBlur stdDeviation="2" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0.647059 0 0 0 0 0.643137 0 0 0 0 0.643137 0 0 0 1 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow_93_102"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow_93_102"
-                result="shape"
-              />
-            </filter>
-            <linearGradient
-              id="paint0_linear_93_102"
-              x1="-169.5"
-              y1="26.9997"
-              x2="330.5"
-              y2="874.999"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0.221679" stop-color="#B32346" />
-              <stop offset="0.66922" stop-color="#6A0B37" />
-            </linearGradient>
-          </defs>
-        </svg>
+    <div className="max-w-[1440px] relative mx-auto flex items-center justify-between h-1/2 lg:h-[700px]">
+      <div className="lg:w-1/2 mx-auto absolute translate-x-1/2 right-1/2 lg:translate-x-0 lg:right-0 -z-50 opacity-50 lg:opacity-100 lg:relative pl-12 shadow-[#444e59] drop-shadow-2xl blur-sm lg:blur-0">
+        <img src={heroPng} alt="" />
       </div>
-      <div className=" flex items-center justify-between h-[80vh] max-w-[1440px] mx-auto ">
-        <div className=" text-right lg:w-1/3 ml-auto space-y-10">
+      <div className="p-6 md:w-2/3 mx-auto lg:mx-0 lg:w-1/3">
+        <div className=" text-center lg:text-right  ml-auto space-y-10">
           <h1 className="text-2xl lg:text-5xl font-semibold">
             Save Life Donate Blood
           </h1>
@@ -76,12 +20,10 @@ const Banner = () => {
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <button className="lg:text-3xl bg-black font-black text-white  px-6 py-3 rounded-lg ">
-            Get Blood Now
-          </button>
+          <ButtonFill text="Get Blood Now" size="3xl" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

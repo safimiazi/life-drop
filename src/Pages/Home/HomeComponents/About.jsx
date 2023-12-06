@@ -1,6 +1,7 @@
+import "./Home.css";
 const About = () => {
   return (
-    <div className=" max-w-[1440px] mx-auto my-96 bg-white shadow-2xl shadow-[#f4f4f4] drop-shadow-2xl space-y-7 p-16 rounded-md">
+    <div className=" max-w-[1440px] mx-auto mb-56 mt-28 bg-white custom-shadow space-y-7 p-16 rounded-md">
       <h1 className="text-4xl font-bold">Our Mission</h1>
       <p className="text-lg opacity-60">
         Lorem Ipsum is simply dummy text of the printing and typesetting

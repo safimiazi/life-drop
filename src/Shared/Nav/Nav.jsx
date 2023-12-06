@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./nav.css";
+import ButtonOutline from "./../Button/ButtonOutline";
 const Nav = () => {
   return (
     <div className="flex gap-4 justify-between items-center max-w-[1440px] mx-auto text-2xl">
@@ -18,9 +19,9 @@ const Nav = () => {
             <path
               d="M91.9906 63.3173L102.603 73.9523C104.702 76.0542 106.131 78.7325 106.711 81.6487C107.291 84.5649 106.994 87.5878 105.859 90.335C104.724 93.0823 102.802 95.4306 100.335 97.0827C97.8676 98.7349 94.9671 99.6167 92 99.6167C89.0329 99.6167 86.1324 98.7349 83.6654 97.0827C81.1985 95.4306 79.2759 93.0823 78.1409 90.335C77.0058 87.5878 76.7094 84.5649 77.2889 81.6487C77.8685 78.7325 79.2981 76.0542 81.3969 73.9523L91.9906 63.3173Z"
               stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <defs>
               <filter
@@ -30,9 +31,9 @@ const Nav = () => {
                 width="265"
                 height="266"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -115,13 +116,13 @@ const Nav = () => {
           }
         >
           Register Now <sup className="text-lg">⌄</sup>
-          <div className={`menuA `}>
+          <div className="menuA bg-white p-0">
             <NavLink
-              to="/find-blood"
+              to="/registerAsDonor"
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "border-b-2 border-[#4B4949]"
-                  : "flex items-center gap-2"
+                  ? "border-b-2 border-[#4B4949] "
+                  : "flex items-center gap-2 hover:bg-[#A8174E] hover:text-white rounded-lg"
               }
             >
               <svg
@@ -141,11 +142,11 @@ const Nav = () => {
               As Donor
             </NavLink>
             <NavLink
-              to="/find-blood"
+              to="/registerAsOrganization"
               className={({ isActive, isPending }) =>
                 isActive
                   ? "border-b-2 border-[#4B4949]"
-                  : "flex gap-2 items-center"
+                  : "flex gap-2 items-center hover:bg-[#A8174E] hover:text-white rounded-lg"
               }
             >
               <svg
@@ -167,9 +168,7 @@ const Nav = () => {
           </div>
         </NavLink>
         <Link to="/login">
-          <button className="bg-transparent border-2 hover:bg-black hover:text-white border-black px-6 py-1 rounded-lg ">
-            Log In
-          </button>
+          <ButtonOutline text="Log In" />
         </Link>
       </div>
     </div>
